@@ -21,7 +21,7 @@ const EditTour = () => {
         let response;
         if (id) {
           response = await axios.put(
-            `https://layag-traveltours-be.herokuapp.com/api/v1/tours/${id}`,
+            `https://layag-travel-tours-be.herokuapp.com/api/v1/tours/${id}`,
             {
               name: tourName,
               duration: tourDuration,
@@ -35,7 +35,7 @@ const EditTour = () => {
           );
         } else {
           response = await axios.post(
-            'https://layag-traveltours-be.herokuapp.com/api/v1/tours',
+            'https://layag-travel-tours-be.herokuapp.com/api/v1/tours',
             {
               name: tourName,
               duration: tourDuration,
@@ -75,7 +75,7 @@ const EditTour = () => {
       const getById = async () => {
         try {
           const response = await axios.get(
-            `https://layag-traveltours-be.herokuapp.com/api/v1/tours/${id}`
+            `https://layag-travel-tours-be.herokuapp.com/api/v1/tours/${id}`
           );
           console.log(response.data.data.tour);
           if (response.data.data.tour) {

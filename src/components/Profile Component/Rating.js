@@ -25,12 +25,12 @@ const Rating = ({ onChange, userBooking, userID }) => {
     if (rating && review) {
       axios
         .post(
-          'https://layag-traveltours-be.herokuapp.com/api/v1/reviews',
+          'https://layag-travel-tours-be.herokuapp.com/api/v1/reviews',
           addData
         )
         .then((response) => {
           return axios.patch(
-            `https://layag-traveltours-be.herokuapp.com/api/v1/bookings/${tourDetails._id}`,
+            `https://layag-travel-tours-be.herokuapp.com/api/v1/bookings/${tourDetails._id}`,
             { isReviewed: true }
           );
         })

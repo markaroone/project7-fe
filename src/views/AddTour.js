@@ -178,7 +178,7 @@ const AddEditTours = () => {
     const fetchingItems = async () => {
       try {
         const response = await axios.post(
-          'https://layag-traveltours-be.herokuapp.com/api/v1/tours',
+          'https://layag-travel-tours-be.herokuapp.com/api/v1/tours',
           {
             name: tourName,
             duration: tourDuration,

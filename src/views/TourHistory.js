@@ -13,7 +13,7 @@ const TourHistory = () => {
     const getTours = async () => {
       try {
         const getData = await axios.get(
-          `https://layag-traveltours-be.herokuapp.com/api/v1/tours`
+          `https://layag-travel-tours-be.herokuapp.com/api/v1/tours`
         );
         setTours(getData.data.data.tours);
       } catch (err) {
@@ -25,7 +25,7 @@ const TourHistory = () => {
 
   const deleteHandler = async (id) => {
     await axios.delete(
-      `https://layag-traveltours-be.herokuapp.com/api/v1/tours/${id}`
+      `https://layag-travel-tours-be.herokuapp.com/api/v1/tours/${id}`
     );
     const updatedData = tours.filter((t) => t.id !== id);
     setTours(updatedData);

@@ -98,7 +98,7 @@ const Tour = () => {
     const getTours = async () => {
       try {
         const getData = await axios.get(
-          `https://layag-traveltours-be.herokuapp.com/api/v1/tours/destination/${id.toLowerCase()}?sort=ratingsAverage`
+          `https://layag-travel-tours-be.herokuapp.com/api/v1/tours/destination/${id.toLowerCase()}?sort=ratingsAverage`
         );
 
         const imageCovers = getData.data.data.tours.map((el) => el.imageCover);

@@ -1,5 +1,5 @@
 export const signup = (user) => {
-  return fetch(`https://layag-traveltours-be.herokuapp.com/api/v1/signup`, {
+  return fetch(`https://layag-travel-tours-be.herokuapp.com/api/v1/signup`, {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -16,7 +16,7 @@ export const signup = (user) => {
 };
 
 export const signin = (user) => {
-  return fetch(`https://layag-traveltours-be.herokuapp.com/api/v1/signin`, {
+  return fetch(`https://layag-travel-tours-be.herokuapp.com/api/v1/signin`, {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -44,7 +44,7 @@ export const signout = (next) => {
     localStorage.removeItem('jwt');
     next();
 
-    return fetch(`https://layag-traveltours-be.herokuapp.com/api/v1/signout`, {
+    return fetch(`https://layag-travel-tours-be.herokuapp.com/api/v1/signout`, {
       method: 'GET',
     })
       .then((response) => {

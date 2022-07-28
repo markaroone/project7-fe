@@ -1,8 +1,8 @@
-// https://layag-traveltours-be.herokuapp.com/api/v1
+// https://layag-travel-tours-be.herokuapp.com/api/v1
 
 export const read = (userId, token) => {
   return fetch(
-    `https://layag-traveltours-be.herokuapp.com/api/v1/user/${userId}`,
+    `https://layag-travel-tours-be.herokuapp.com/api/v1/user/${userId}`,
     {
       method: 'GET',
       headers: {
@@ -20,7 +20,7 @@ export const read = (userId, token) => {
 
 export const update = (userId, token, user) => {
   return fetch(
-    `https://layag-traveltours-be.herokuapp.com/api/v1/user/${userId}`,
+    `https://layag-travel-tours-be.herokuapp.com/api/v1/user/${userId}`,
     {
       method: 'PUT',
       headers: {

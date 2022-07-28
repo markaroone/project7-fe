@@ -12,7 +12,7 @@ const TourPackages = () => {
     const fetchItems = async () => {
       try {
         const response = await axios.get(
-          'https://layag-traveltours-be.herokuapp.com/api/v1/tours'
+          'https://layag-travel-tours-be.herokuapp.com/api/v1/tours'
         );
         setTours(response.data.data.tours);
         console.log(response.data.data.tours.ratingsAverage);
